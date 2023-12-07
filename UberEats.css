@@ -284,4 +284,14 @@
     animation: 30s slide infinite linear;
   }
   
-  
+  .harta{
+    color: rgb(57, 121, 57) ;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  .map{
+    width: 735px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+  }
