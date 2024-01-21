@@ -35,5 +35,5 @@ document.addEventListener ("DOMContentLoaded",function(event){
        return false;
      }
    }
-   SignUp.addEventListener('click',validate);
+   SignUp.addEventListener('submit',validate);
    });
