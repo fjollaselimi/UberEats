@@ -1,3 +1,35 @@
+<?php
+require_once "dblidhja.php";
+
+if (isset($_POST["submit"])){
+        $Number = $_POST["Number"];
+        $Password = $_POST["Password"];
+
+        $database = new dblidhja();
+        $conn = $database->connectDB();
+        if($conn){
+                $sql = "SELECT * FROM Klienti WHERE Numri = :Numri";
+                $stmt = $conn->prepare($sql);
+                $stmt->bindParam(':Numri', $Number);
+                $stmt ->execute();
+
+                $user = $stmt -> fetch(PDO::FETCH_ASSOC);
+                if($user) {
+                        if(password_verify($Password,$user['Password'])) {
+                                session_start();
+                                $_SESSION["user"] = "yes";
+                                $_SESSION["Rolet"] = ($Number === "(123)123-1234") ? "admin": "user";
+                                header("Location: klienti.php");
+                                exit();
+                        } else {
+                                echo "<script>alert('Numri nuk pershtatet'); </script>";
+                        }
+                   }
+
+         }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,3 +75,4 @@
     </div>
 </body>
 </html>
+        

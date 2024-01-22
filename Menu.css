@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(196, 189, 174);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.53);
+    height: 70px;
+    border-radius: 15px;
+}
+
+.logo{
+    width: 60px;
+    margin-left: 575px;
+}
+h1{
+    margin-right: 560px;
+    color: #46a910;
+}
+.Burger img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+.Burger{
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 40px;
+}
