@@ -53,7 +53,7 @@ if (isset($_POST["submit"])){
                 </div>
                 <div class="inputi">
                         <input class="fusha" type="tel" class="inputboxi" id="numri" placeholder="Number" required>
-                        <label class="fusha" for="numri">Phone Number</label>
+                        <label class="fusha" for="numri">Number</label>
                   
                         <input class="fusha" type="password" class="inputboxi" id="passi" placeholder="Password" required>
                         <label class="fusha" for="passi">Password</label>
