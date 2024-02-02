@@ -1,6 +1,6 @@
 <?php
 
-@include 'connection.php';
+@include 'connection1.php';
 
 session_start();
 
