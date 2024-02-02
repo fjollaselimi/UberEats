@@ -1,0 +1,91 @@
+body { 
+   background-image: url(background7.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   width: auto;
+   height: 600px;
+}
+
+.button { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top:0px;
+}
+
+.button button{ 
+    padding: 8px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color:white;
+    background-color: rgb(57, 121, 57);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+a{ 
+      text-decoration: none;
+      font-size: larger;
+      color: white;
+}
+
+.button button:hover{ 
+     opacity: 0.9;
+}
+
+.first-sentence{ 
+     display: inline-block;
+     margin-left: 150px;
+     margin-top: 50px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+     font-size: 90px;
+     color: rgb(57, 121, 57);
+}
+
+.first-sentence p{ 
+      margin:0px;
+}
+
+.first-sentence span{ 
+   color: white;
+   background-color: rgb(57, 121, 57);
+   border-radius: 25px;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+
+.second-sentence { 
+     display: inline-block;
+     margin-top: 20px;
+     margin-left: 150px;
+     font-size: 65px;
+     color: rgb(57, 121, 57);
+}
+
+.boards{ 
+      display: flex;
+      justify-content:space-evenly;
+      align-content: last baseline;
+      margin-top: 85px;
+      margin-bottom: 0px;;
+}
+
+.boards button { 
+      border: none;
+      border-radius: 20px;
+      width:200px;
+      height: 50px;
+      color: white;
+      background-color: rgb(57, 121, 57);
+      cursor: pointer;
+}
+
+.boards button:hover{ 
+      opacity: 0.9;
+}
