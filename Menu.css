@@ -20,7 +20,7 @@ h1{
 .Burger img{
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
+    width: 270px;
 }
 .Burger{
     display: inline-block;
